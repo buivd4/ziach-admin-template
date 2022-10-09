@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "postcss": "^8.4.17",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "name": "ziach-admin-template",
+  "version": "1.0.0",
+  "description": "Admin template",
+  "scripts": {
+    "start": "npm run clean && parcel serve public/index.html --dist-dir development -p 3000",
+    "build": "rimraf ./build && parcel build public/index.html --dist-dir ./build --public-url ./",
+    "clean": "rimraf ./development && rimraf ./.parcel-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
